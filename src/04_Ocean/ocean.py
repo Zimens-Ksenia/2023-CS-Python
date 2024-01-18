@@ -43,13 +43,12 @@ class Ocean:
                             new_row.append(0)
                         else:
                             new_row.append(3)
+                    elif n_fish == 2 and n_shrimp == 3:
+                        new_row.append(2)
+                    elif n_fish == 3:
+                        new_row.append(2)
                     else:
-                        if n_fish == 3 and n_shrimp == 3:
-                            new_row.append(2)
-                        elif n_fish == 3:
-                            new_row.append(2)
-                        else:
-                            new_row.append(0)
+                        new_row.append(0)
             new_state.append(new_row)
 
         return Ocean(init_state=new_state)
