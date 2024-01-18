@@ -31,4 +31,4 @@ class TestOcean:
         self.ocean = self.ocean.gen_next_quantum() 
         assert str(self.ocean) == "\n".join( 
             [" ".join(str(el) for el in row) for row in self.next_state] 
-        )
+        )   
